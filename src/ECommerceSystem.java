@@ -9,9 +9,9 @@ public class ECommerceSystem {
 
     public static void main(String[] args) {
         try {
-            FileOperations.checkOrCreateFile("products.docx");
+            FileOperations.checkOrCreateFile("products.txt");
             FileOperations.checkOrCreateFile("orders.txt");
-            products = FileOperations.readProductsFromFile("products.docx");
+            products = FileOperations.readProductsFromFile("products.txt");
             } catch (IOException e) {
             System.err.println("Dosya işlemi sırasında hata: " + e.getMessage());
         }
